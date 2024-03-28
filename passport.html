@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Registration | Passport Seva</title>
+        <style> 
+            span
+            {
+                color: red;
+            }
+            .btn
+            {
+                background-color: blue;
+                color: white;
+                size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: blue;">User Registration</h1>
+        <p><span style="font-weight: bold;color: black; padding-left: 0%;">Important Information</span>: Passport application can be processed at any PSK/POPSK/PSLK WITHIN INDIA irrespective of your residential address</p>
+        
+        <p style="padding-left: 10px;">marked with asterisk (<span>*</span>) are mandatory</p>
+        
+        <form>
+            <table style="width: 80%; padding-left: 50px;">
+                <tr>
+                    <td>
+                        Register to apply<span>*</span>
+                    </td>
+                    <td>  
+                        <input type="radio" name="place" checked>CPV Delhi <br>
+                        <input type="radio" name="place">Passport Office 
+                    </td>
+                     <td>
+                        <small>
+                        Select the 'CPV Delhi' option to apply for Diplomatic/Official<br/> passport at Consular, Passport and Visa (CPV) division, Delhi.
+                        </small>
+                    </td>
+                </tr>
+                
+                <tr>   
+                    <td>Passport Office<span>*</span><br/><small>(As per Present Residential Address)</small></td>
+                    <td>
+                        <select name="---select---">
+                            <option>Ahmedabad</option>
+                            <option>Bangalore</option>
+                            <option>Goa</option>
+                            <option>Jammu</option>
+                            <option>Surat</option>
+                            <option>Chandigarh</option>
+                            <option>Chennai</option>
+                            <option>Cochin</option>
+                            <option>Delhi</option>
+                            <option>Ghaziabad</option>
+                            <option>Hyderabad</option>
+                            <option>Jaipur</option>
+                            <option>Kolkata</option>
+                            <option>Lucknow</option>
+                            <option>Mumbai</option>
+                        </select>
+                    </td>
+                    <td>
+                        <small>
+                        Tibetan Refugees applying for Identity Certificate must register<br/> with 'Delhi' Passport Office.
+                        </small>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>Given Name <small>(Max 45 Characters)</small><span>*</span></td>
+                    <td><input type="text" required></td>
+                    <td>
+                        <small>
+                        <b>First Name + Middle Name</b><br>
+                        
+                        Initials and honorifics (e.g. Dr.,Col.,etc.) are not allowed.
+                        </small>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Surname<br><small>(Max 45 Characters)</small></td>
+                    
+                    <td><input type="text"></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth(DD/MM/YYYY)<span>*</span></td>
+                    <td><input type="date" required></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>E-Mail<small>(Max 35 Characters)</small><span>*</span></td>
+                    <td><input type="email" required></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Do you want your Login Id to be same as E-Mail Id?</td>
+                    <td>
+                        <input type="radio" name="id" checked>Yes
+                        <input type="radio" name="id">No 
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Login Id<span>*</span></td>
+                    <td><input type="text" required></td>
+                    <td>
+                        <a href="#" style="color: blue;">Check Availability</a>   
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password<span>*</span></td>
+                    <td><input type="password" required></td>
+                    <td>
+                        <a href="https://portal2.passportindia.gov.in/AppOnlineProject/onlineHtml/passwordPolicy.html" style="color: blue;">Password Policy</a>    
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password<span>*</span></td>
+                    <td><input type="password" required></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>Hint Question<span>*</span></td>
+                    <td><select name="---select---">
+                        <option>Birth City</option>
+                        <option>Favourite Color</option>
+                        <option>Favourite Food</option>
+                        <option>First School</option>
+                        <option>First Car</option>
+                    </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Hint Answer<span>*</span></td>
+                    <td>
+                        <input type="text" required>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Enter Characters Displayed<span>*</span></td>
+                    <td>
+                        <img src="https://miro.medium.com/max/1000/0*pV2Ku6kJ4kOPUnY9.png" width="100px">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="text" required>    
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <hr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Register" class="btn">
+                        <input type="reset" vlaue="Clear" class="btn">
+                    </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+        
