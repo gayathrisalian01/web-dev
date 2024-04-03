@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create New Window</title>
+  <script>
+    function openNewWindow() {
+      var newWindow = window.open('', '_blank', 'width=300,height=200');
+      newWindow.document.write("<p>This is a New Window</p>");
+      newWindow.document.close();
+    }
+  </script>
+</head>
+<body>
+  <h2 style="color: red;">Click here to open a new window</h2>
+  <button onclick="openNewWindow()">Click</button>
+</body>
+</html>
