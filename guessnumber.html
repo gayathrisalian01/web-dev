@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guess a Number</title>
+
+	<style>
+	body {
+		width: 50%;
+		max-width: 800px;
+		min-width: 480px;
+		margin: 0 auto;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>Guess The Number</h1>
+	<p>
+		You have 5 tries !!!
+	</p>
+
+	<div class="form">
+		<label for="userinput">Enter a guess: </label>
+		<input type="text" id="userinput">
+		<input type="submit" value="Submit guess" id="submitguess">
+	</div>
+
+	<script type="text/javascript">
+
+	var actualnum = Math.floor(Math.random() * 10 + 1);
+	var guess = 1;
+	document.getElementById("submitguess").onclick = function() {
+		var usernum = parseInt(document.getElementById("userinput").value);
+		if (isNaN(usernum)) {
+			alert("Please enter a valid number.");
+			return;
+		}
+		if (usernum == actualnum) {
+			alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+				+ guess + " GUESS ");
+		} else if (usernum > actualnum) {
+			guess++;
+			alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+		} else {
+			guess++;
+			alert("OOPS SORRY!! TRY A GREATER NUMBER")
+		}
+		if (guess > 5) {
+			alert("GAME OVER! YOU HAVE EXHAUSTED YOUR 5 TRIES. THE CORRECT NUMBER WAS: " + actualnum);
+			document.getElementById("submitguess").disabled = true;
+		}
+	}
+	</script>
+</body>
+</html>
