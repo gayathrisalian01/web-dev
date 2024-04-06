@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Digital Clock</title>
+
+	<style>
+	body {
+		text-align: center;
+		margin-top: 100px;
+		font-size: 48px;
+	}
+	</style>
+</head>
+
+<body>
+	<h1 id="clock">00:00:00</h1>
+
+	<script type="text/javascript">
+
+	function displayTime() {
+		var now = new Date();
+		var hours = String(now.getHours());
+		var minutes = String(now.getMinutes());
+		var seconds = String(now.getSeconds());
+
+		
+		if (hours.length < 2) {
+			hours = "0" + hours;
+		}
+		if (minutes.length < 2) {
+			minutes = "0" + minutes;
+		}
+		if (seconds.length < 2) {
+			seconds = "0" + seconds;
+		}
+		document.getElementById("clock").textContent = hours + ":" + minutes + ":" + seconds;
+		setTimeout(displayTime, 1000);
+	}
+	displayTime();
+
+	</script>
+</body>
+</html>
