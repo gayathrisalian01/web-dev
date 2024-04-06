@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+ width: 500px;
+ height: 500px;
+ border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div  onmousemove="showXY(event)" onmouseout="clearCoor()" > </div>
+<p id="demo"></p>
+<script>
+function showXY(event)
+ {
+ var x = event.clientX;
+ var y = event.clientY;
+ var coor = "X coords: " + x + ", Y coords: " + y;
+ document.getElementById("demo").innerHTML = coor;
+}
+function clearCoor()
+ {
+  document.getElementById("demo").innerHTML = "";
+}
+</script>
+</body>
+</html>
